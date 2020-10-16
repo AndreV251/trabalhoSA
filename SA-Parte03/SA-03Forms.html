@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+
+    <style>
+         body{
+            background-color: #ebe134;
+            
+            background-image:url(imagens/fundo.jpg);
+        }
+
+        #meio {
+    width:510px;
+    height:400px;
+    margin-left:420px;
+    margin-top:30px;
+    background-color:white;
+    margin-bottom: 20px;
+   
+  
+    border-radius:10px; 
+    -moz-border-radius:10px; 
+    -webkit-border-radius:10px;
+        }
+
+        #meio h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="meio">
+    <h2>Fale conosco!</h2>
+    
+        <form action="enviar.php" method="POST" name="formularioBlog">
+           <table>
+            <tr>
+                <td>
+                    <label for="nome"><b>Nome:</b></label>
+                    <br>
+                
+                    <input type="text" id="nome" name="nome" size="66" maxlength="30" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="email"><b>E-mail:</b></label>
+                    <br>
+                
+                    <input type="email" id="email" name="email" size="66" maxlength="30" />
+                </td>   
+            </tr>
+
+            
+
+            <tr>
+                <td>
+                    <label for="coment"><b>Comentário:</b></label>
+                    <br>
+
+               
+                    <textarea cols="68" rows="10" id="coment" name="coment" ></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p><b>Entraremos o contato o mais rápido possível</b></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" id="enviar" name="enviar" value="Enviar"/>
+                </td>
+            </tr>
+           </table>
+        </form>
+        </div>
+    
+    
+</body>
+</html>
