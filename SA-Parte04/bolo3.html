@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <style>
+        
+            * {
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+    }
+    body{
+        background-image:url(imagens/fundo.jpg);    }
+    
+
+    .menu{
+        background-color:pink;
+    }
+
+    .menu ul li{
+	background-color: pink;
+	float:left;
+	width: 200px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	font-size: large;
+	position: relative;
+}
+
+.menu ul li:hover{
+	background-color: palevioletred;
+}
+
+.menu ul{
+	padding: 0px;
+    max-width: 800px;
+}
+
+.menu ul ul{
+	display: none;
+}
+
+.menu ul li:hover > ul{
+	display:block;
+}
+
+.menu ul ul ul{
+	margin-left: 201px;
+	top: 0px;
+	position: absolute;
+}
+
+.menu ul ul li:hover{
+	background-color: palevioletred;
+}
+
+.menu ul ul ul li:hover{
+	background-color: palevioletred;
+}
+
+.menu a{
+	color: black;
+	text-decoration: none;
+}
+
+#meio {
+    width:650px;
+    height:530px;
+    margin-left:370px;
+    margin-top:20px;
+    background-color:white;
+    margin-bottom: 20px;
+    background-image:url(imagens/fundo.jpg);
+   
+  
+    border-radius:10px; 
+    -moz-border-radius:10px; 
+    -webkit-border-radius:10px;
+        }
+
+        body p{
+            font-family: tahoma;
+            font-size:small;
+            
+            text-decoration: none;
+
+        }
+        
+        #meio img{
+            align-items: center;
+        }
+    
+    </style>
+        
+    
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Pão de mel</a></li>
+            <li><a href="#">Bolos</a>
+                <ul>
+                    <li><a href="#">Casamento</a></li>
+                    <li><a href="#">Aniversário</a>
+                        
+                    </li>
+                    <li><a href="#">15 anos</a></li>
+                    <li><a href="#">Formatura</a>
+                        
+                    </li>
+                    
+                </ul>
+            </li>
+            <li><a href="#">Docinhos</a></li>
+            <li><a href="#">Tortas de doce</a></li>
+        </ul>
+    </nav>
+    <div id="meio">
+        <br><br><br>
+        <h1 style="text-decoration: underline;margin-left: 70px;"> Encomende agora o seu bolo!</h1>
+        
+        <br><br><a href="bolo2.html"><p style="float: left;margin-top: 160px;">Voltar &nbsp;&nbsp; </a>></p>
+        <img  src="imagens/bolo3.jpg" alt="" width="540" height="400">
+        <a href="principalSA04.html"><p style="float: right;margin-top: 160px;">Avançar</a></p>
+        
+
+    </div>
+    
+    
+</body>
+</html>
